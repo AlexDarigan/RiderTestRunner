@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>org.example.WAT.TestRunner</id>
+    <name>WAT TestRunner</name>
+    <vendor email="code@darigan.ie" url="github.com/CodeDarigan">Alex Darigan</vendor>
+
+    <description>Description of my TestRunner Extend to 40</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="WAT TestRunner" secondary="true" anchor="bottom"
+                    factoryClass="wat.riderTestRunner.MyToolWindowFactory"/>
+    </extensions>
+
+    <actions>
+    </actions>
+</idea-plugin>
